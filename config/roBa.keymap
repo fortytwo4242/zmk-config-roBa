@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        atmark {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
