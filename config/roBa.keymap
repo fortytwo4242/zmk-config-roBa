@@ -79,10 +79,10 @@
 
         NUMBER {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2        &kp NUMBER_3             &kp NUMBER_4   &kp NUMBER_5                                          &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0
-&kt EXCL      &kp LS(LEFT_BRACE)  &kp HASH                 &kp DOLLAR     &kp PERCENT     &trans                 &kp LS(SLASH)  &kp CARET        &mkp MB1      &kp DOUBLE_QUOTES  &mkp MB2          &kp LS(INTERNATIONAL_1)
-&kp EQUAL     &kp PLUS            &kp LS(INTERNATIONAL_3)  &kp AMPERSAND  &kp LEFT_BRACE  &kp RIGHT_BRACKET      &kp BACKSLASH  &kp COLON        &kp AT_SIGN   &kp SEMICOLON      &kp SINGLE_QUOTE  &kp INTERNATIONAL_3
-&trans        &trans              &trans                   &trans         &trans          &trans                 &trans         &lt 3 BACKSPACE                                                     &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3             &kp NUMBER_4   &kp NUMBER_5                                              &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0
+&kt EXCL      &kp LBRC      &kp HASH                 &kp DOLLAR     &kp PERCENT         &trans                 &kp LS(SLASH)  &kp CARET        &mkp MB1      &kp DOUBLE_QUOTES  &mkp MB2          &kp LS(INTERNATIONAL_1)
+&kp EQUAL     &kp PLUS      &kp LS(INTERNATIONAL_3)  &kp AMPERSAND  &kp LS(LEFT_BRACE)  &kp RIGHT_BRACKET      &kp BACKSLASH  &kp COLON        &kp AT_SIGN   &kp SEMICOLON      &kp SINGLE_QUOTE  &kp INTERNATIONAL_3
+&trans        &trans        &trans                   &trans         &trans              &trans                 &trans         &lt 3 BACKSPACE                                                     &trans
             >;
         };
 
