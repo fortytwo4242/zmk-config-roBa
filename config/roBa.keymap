@@ -69,7 +69,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W         &kp E         &kp R        &kp T                                                          &kp Y            &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F        &kp G        &trans                      &kp LS(MINUS)         &kp H            &kp J  &lt 1 K    &lt 5 L  &mt RIGHT_CONTROL MINUS
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F        &kp G        &tog 4                      &kp LS(MINUS)         &kp H            &kp J  &lt 1 K    &lt 5 L  &mt RIGHT_CONTROL MINUS
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V        &kp B        &kp ASTERISK                &kp LEFT_PARENTHESIS  &kp N            &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &lt 6 ESCAPE        &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG2  &lt 1 SPACE  &mt LEFT_ALT LC(SPACE)      &lt 1 ENTER           &lt 2 BACKSPACE                             &lt 6 DELETE
             >;
@@ -79,10 +79,10 @@
 
         NUMBER {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3             &kp NUMBER_4   &kp NUMBER_5                                          &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0
-&kt EXCL      &kp LEFT_BRACE  &kp HASH                 &kp DOLLAR     &kp PERCENT     &trans                 &kp LS(SLASH)  &kp CARET        &mkp MB1      &kp DOUBLE_QUOTES  &mkp MB2          &kp LS(INTERNATIONAL_1)
-&kp EQUAL     &kp PLUS        &kp LS(INTERNATIONAL_3)  &kp AMPERSAND  &kp LEFT_BRACE  &kp RIGHT_BRACKET      &kp BACKSLASH  &kp COLON        &kp AT_SIGN   &kp SEMICOLON      &kp SINGLE_QUOTE  &kp INTERNATIONAL_3
-&trans        &trans          &trans                   &trans         &trans          &trans                 &trans         &lt 3 BACKSPACE                                                     &trans
+&kp NUMBER_1  &kp NUMBER_2        &kp NUMBER_3             &kp NUMBER_4   &kp NUMBER_5                                          &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0
+&kt EXCL      &kp LS(LEFT_BRACE)  &kp HASH                 &kp DOLLAR     &kp PERCENT     &trans                 &kp LS(SLASH)  &kp CARET        &mkp MB1      &kp DOUBLE_QUOTES  &mkp MB2          &kp LS(INTERNATIONAL_1)
+&kp EQUAL     &kp PLUS            &kp LS(INTERNATIONAL_3)  &kp AMPERSAND  &kp LEFT_BRACE  &kp RIGHT_BRACKET      &kp BACKSLASH  &kp COLON        &kp AT_SIGN   &kp SEMICOLON      &kp SINGLE_QUOTE  &kp INTERNATIONAL_3
+&trans        &trans              &trans                   &trans         &trans          &trans                 &trans         &lt 3 BACKSPACE                                                     &trans
             >;
         };
 
@@ -109,7 +109,7 @@
         ETC2 {
             bindings = <
 &trans  &trans    &kp UP    &trans     &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &tog 4      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
 &trans  &trans    &trans    &trans     &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans    &trans    &trans     &trans  &trans      &trans  &trans                              &trans
             >;
