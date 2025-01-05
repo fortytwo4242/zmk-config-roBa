@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
@@ -67,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R               &kp T                                                 &kp Y            &kp U  &lt 5 I    &kp O    &kp P
-&mt RC(A) A       &kp S         &kp D         &kp F               &kp G        &trans                      &trans       &kp H            &kp J  &lt 1 K    &lt 5 L  &mt RIGHT_CONTROL MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &trans                      &trans       &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 6 ESCAPE      &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_ALT LANG2  &lt 1 SPACE  &mt LEFT_ALT LC(SPACE)      &lt 1 ENTER  &lt 2 BACKSPACE                             &lt 6 DELETE
+&kp Q             &kp W         &kp E         &kp R               &kp T                                                          &kp Y            &kp U  &lt 5 I    &kp O    &kp P
+&mt RC(A) A       &kp S         &kp D         &kp F               &kp G        &trans                      &trans                &kp H            &kp J  &lt 1 K    &lt 5 L  &mt RIGHT_CONTROL MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &kp ASTERISK                &kp LEFT_PARENTHESIS  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt 6 ESCAPE      &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_ALT LANG2  &lt 1 SPACE  &mt LEFT_ALT LC(SPACE)      &lt 1 ENTER           &lt 2 BACKSPACE                             &lt 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -78,19 +79,19 @@
 
         NUMBER {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans        &mkp MB1      &trans        &mkp MB2      &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans        &trans        &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                                                  &trans
+&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3             &kp NUMBER_4  &kp NUMBER_5                      &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0
+&kt EXCL      &kp LEFT_BRACE  &kp HASH                 &kp DOLLAR    &kp PERCENT   &trans      &trans  &kp CARET        &mkp MB1      &kp DOUBLE_QUOTES  &mkp MB2          &kp LS(LC(INTERNATIONAL_1))
+&kp EQUAL     &kp PLUS        &kp LS(INTERNATIONAL_3)  &trans        &trans        &trans      &trans  &kp COLON        &kp AT_SIGN   &kp SEMICOLON      &kp SINGLE_QUOTE  &kp INTERNATIONAL_3
+&trans        &trans          &trans                   &trans        &trans        &trans      &trans  &lt 3 BACKSPACE                                                     &trans
             >;
         };
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp F1     &kp F2     &kp F3     &kp F4     &kp F5                           &kp F6    &kp F7    &kp F8  &kp F9     &kp F10
+&kp LC(A)  &kp LC(S)  &kp LC(H)  &kp LC(F)  &kp ESCAPE   &trans      &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F11
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)    &trans      &trans  &trans    &trans    &trans  &trans     &kp F12
+&trans     &trans     &trans     &trans     &lt 3 SPACE  &trans      &trans  &trans                                 &trans
             >;
         };
 
