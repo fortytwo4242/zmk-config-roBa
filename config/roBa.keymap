@@ -92,6 +92,8 @@
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)    &kp RIGHT_BRACE      &kp PIPE       &trans    &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F12
 &trans     &trans     &trans     &trans     &lt 3 SPACE  &trans               &trans         &trans                                                  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         ETC {
